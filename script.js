@@ -28,3 +28,21 @@ scale:.8}).fromTo("#box1",{x:-500},{duration:4,rotation:360,x:100,     backgroun
     borderRadius:"50%",
     scale:.8})
 
+var tn = gsap.timeline()
+
+
+tn.from("h2",
+    {
+        y:-10
+        ,duration:.4
+        ,opacity:0,
+        delay:0.5
+    }).from('h4',
+        {
+            y:-10
+            ,duration:.4
+            ,opacity:0,
+            stagger:.3,
+            ease:"back"
+        }
+    )
