@@ -7,17 +7,17 @@
 // })
 
 
-gsap.fromTo("h1"
-    ,{y:300,opacity:0},{
-       y:10,
-       opacity:1,
-    duration:2,
-    color:"green",
-    stagger:-1,
-    ease:"back.in",
+// gsap.fromTo("h1"
+//     ,{y:300,opacity:0},{
+//        y:10,
+//        opacity:1,
+//     duration:2,
+//     color:"green",
+//     stagger:-1,
+//     ease:"back.in",
    
 
-})
+// })
 
 var t1  =gsap.timeline()
 
@@ -45,4 +45,12 @@ tn.from("h2",
             stagger:.3,
             ease:"back"
         }
-    )
+    ).from("h1",{
+
+y:40,
+duration:1,
+opacity:0,
+// scale:.2
+
+
+    })
