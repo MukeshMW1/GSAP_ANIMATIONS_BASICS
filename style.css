@@ -33,11 +33,11 @@ gap:10px;
 cursor: pointer;
 }
 
-#box
+.box
 {
     height: 300px;
     width:300px;
-    background: crimson;
+    background: yellowgreen;
 }
 #box1
 {
@@ -57,11 +57,51 @@ cursor: pointer;
 } */
 
 
-h1{
+/* h1{
     position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
     font-size: 60px;
     white-space: nowrap;
+   
+} */
+
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    position: relative;
+    font-size: 40px;
+}
+h1{
+    position: relative;
+    font-size: 40px;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
