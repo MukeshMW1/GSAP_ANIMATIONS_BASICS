@@ -51,47 +51,47 @@
 
 // })
 
-// var t1 = gsap.timeline();
+var t1 = gsap.timeline();
 
-// t1.fromTo(
-//   "#box",
-//   { x: -500 },
-//   {
-//     duration: 4,
-//     rotation: 360,
-//     x: 100,
-//     backgroundColor: "green",
-//     borderRadius: "50%",
-//     scale: 0.8,
-//   }
-// ).fromTo(
-//   "#box1",
-//   { x: -500 },
-//   {
-//     duration: 4,
-//     rotation: 360,
-//     x: 100,
-//     backgroundColor: "green",
-//     borderRadius: "50%",
-//     scale: 0.8,
-//   }
-// );
+t1.fromTo(
+  "#box",
+  { x: -500 },
+  {
+    duration: 4,
+    rotation: 360,
+    x: 100,
+    backgroundColor: "green",
+    borderRadius: "50%",
+    scale: 0.8,
+  }
+).fromTo(
+  "#box1",
+  { x: -500 },
+  {
+    duration: 4,
+    rotation: 360,
+    x: 100,
+    backgroundColor: "green",
+    borderRadius: "50%",
+    scale: 0.8,
+  }
+);
 
-// var tn = gsap.timeline();
+var tn = gsap.timeline();
 
-// tn.from("h2", {
-//   y: -10,
-//   duration: 0.4,
-//   opacity: 0,
-//   delay: 0.5,
-// })
-//   .from("h4", {
-//     y: -10,
-//     duration: 0.4,
-//     opacity: 0,
-//     stagger: 0.3,
-//     ease: "back",
-//   })
+tn.from("h2", {
+  y: -10,
+  duration: 0.4,
+  opacity: 0,
+  delay: 0.5,
+})
+  .from("h4", {
+    y: -10,
+    duration: 0.4,
+    opacity: 0,
+    stagger: 0.3,
+    ease: "back",
+  })
 //   .from("h1", {
 //     y: 40,
 //     duration: 1,
