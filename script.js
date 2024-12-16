@@ -169,3 +169,7 @@ transform:"translateX(-150%)",
 
 
 })
+
+
+
+const path = `M 10 100 Q 400 100 1000 100`

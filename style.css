@@ -114,3 +114,22 @@ cursor: pointer;
     align-items: center;
     justify-content: center;
 }
+
+
+
+#string
+{
+    height: 100%;
+    width: 100%;
+    background-color:greenyellow ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+svg{
+    margin: 0 10px;
+    width: 100%;
+    background-color:black ;
+}
