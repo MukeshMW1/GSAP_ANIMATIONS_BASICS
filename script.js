@@ -51,31 +51,31 @@
 
 // })
 
-var t1 = gsap.timeline();
+// var t1 = gsap.timeline();
 
-t1.fromTo(
-  "#box",
-  { x: -500 },
-  {
-    duration: 4,
-    rotation: 360,
-    x: 100,
-    backgroundColor: "green",
-    borderRadius: "50%",
-    scale: 0.8,
-  }
-).fromTo(
-  "#box1",
-  { x: -500 },
-  {
-    duration: 4,
-    rotation: 360,
-    x: 100,
-    backgroundColor: "green",
-    borderRadius: "50%",
-    scale: 0.8,
-  }
-);
+// t1.fromTo(
+//   "#box",
+//   { x: -500 },
+//   {
+//     duration: 4,
+//     rotation: 360,
+//     x: 100,
+//     backgroundColor: "green",
+//     borderRadius: "50%",
+//     scale: 0.8,
+//   }
+// ).fromTo(
+//   "#box1",
+//   { x: -500 },
+//   {
+//     duration: 4,
+//     rotation: 360,
+//     x: 100,
+//     backgroundColor: "green",
+//     borderRadius: "50%",
+//     scale: 0.8,
+//   }
+// );
 
 var tn = gsap.timeline();
 
@@ -172,4 +172,34 @@ transform:"translateX(-150%)",
 
 
 
-const path = `M 10 100 Q 400 100 1000 100`
+var initialPath = `M 10 100 Q 250 100 800 100`
+var finalPath = `M 10 100 Q 250 100 800 100`
+
+
+var string  = document.querySelector("#string")
+var svg  = document.querySelector("#svg")
+
+string.addEventListener("mousemove",function(dets)
+{
+initialPath =`M 10 100 Q ${dets.x} ${dets.y-120} 900 100`
+console.log(dets)
+gsap.to('svg path',{
+  attr:{d:initialPath},
+  duration:.5,
+  ease:"power3.out"
+
+})
+})
+
+
+string.addEventListener('mouseleave',function()
+{
+  gsap.to("svg path",{
+
+    attr:{d:finalPath},
+    duration:1,
+    ease:"elastic.out(1,0.2)"
+
+  }
+  )
+})
