@@ -203,3 +203,19 @@ string.addEventListener('mouseleave',function()
   }
   )
 })
+
+
+
+var cursor = document.querySelector("#cursor")
+var body =document.querySelector('body')
+
+
+
+body.addEventListener('mousemove',(event)=>{
+  // console.log(event)
+  gsap.to(cursor,{
+    x:event.x,
+    y:event.y,
+    duration:1
+  })
+})
