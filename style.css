@@ -140,11 +140,45 @@ svg{
 
 #cursor
 {
-    background-color: rgb(240, 181, 181);
+    background-color: black;
     width:20px;
     height:20px;
     border-radius: 50%;
     position:fixed;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px;
+    text-align: center;
+    color:white;
 
+
+}
+
+
+#image
+{
+    height: 60vh;
+    width: 80vw;
+    position: relative;
+   
+   
+}
+
+#image img
+{
+height: 100%;
+width: 100%;
+object-fit: cover;
+
+}
+
+#image #overlay
+{
+    position: absolute;
+   background: transparent;
+    z-index:11;
+    height:100%;
+    width:100%;
 }

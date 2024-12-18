@@ -214,8 +214,44 @@ var body =document.querySelector('body')
 body.addEventListener('mousemove',(event)=>{
   // console.log(event)
   gsap.to(cursor,{
-    x:event.x,
-    y:event.y,
-    duration:1
+    x:event.x+20,
+    y:event.y-20,
+    
   })
 })
+
+
+var  image =document.querySelector('#page1 #image')
+
+image.addEventListener('mouseenter',()=>{{
+  // console.log("Mousee eneterd inside the image")
+cursor.innerHTML = "Show More"
+
+gsap.to(cursor,{
+  scale:2,
+
+})
+gsap.to(image,
+  {
+    scale:.9
+  }
+)
+
+}})
+var  image =document.querySelector('#page1 #image')
+
+image.addEventListener('mouseleave',()=>{{
+  // console.log("Mousee eneterd inside the image")
+cursor.innerHTML = ""
+gsap.to(cursor,{
+  scale:1,
+
+})
+
+gsap.to(image,
+  {
+    scale:1
+  }
+)
+
+}})
