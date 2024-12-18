@@ -181,6 +181,11 @@ var svg  = document.querySelector("#svg")
 
 string.addEventListener("mousemove",function(dets)
 {
+  cursor.innerHTML = "Guitar"
+  gsap.to(cursor,{
+    scale:2,
+  
+  })
 initialPath =`M 10 100 Q ${dets.x} ${dets.y-120} 900 100`
 console.log(dets)
 gsap.to('svg path',{
@@ -194,6 +199,11 @@ gsap.to('svg path',{
 
 string.addEventListener('mouseleave',function()
 {
+  cursor.innerHTML = ""
+  gsap.to(cursor,{
+    scale:1,
+  
+  })
   gsap.to("svg path",{
 
     attr:{d:finalPath},
