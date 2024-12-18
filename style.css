@@ -1,58 +1,50 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-html,body{
-    height: 100vh;
-    width: 100vw;
-    background: #000;
-    color: aliceblue;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:16px;
-    
-  
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
 }
 
-body{
-    overflow-x: hidden;
-    
+body {
+  overflow-x: hidden;
 }
 
-.nav
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:30px 50px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
 }
-#part2
-{
-display: flex;
-gap:10px;
-
+#part2 {
+  display: flex;
+  gap: 10px;
 }
 
-#part2 h4,h2{
-cursor: pointer;
+#part2 h4,
+h2 {
+  cursor: pointer;
 }
 
-.box
-{
-    height: 300px;
-    width:300px;
-    background: yellowgreen;
+.box {
+  height: 300px;
+  width: 300px;
+  background: yellowgreen;
 }
-#box1
-{
-    height: 300px;
-    width:300px;
-    background: greenyellow;
+#box1 {
+  height: 300px;
+  width: 300px;
+  background: greenyellow;
 }
-
-
 
 /* .main-content
 {
@@ -61,7 +53,6 @@ cursor: pointer;
     align-items: center;
     height: 100vh;
 } */
-
 
 /* h1{
     position: absolute;
@@ -73,112 +64,92 @@ cursor: pointer;
    
 } */
 
-
-#page1{
-    height: 100%;
-    width: 100%;
-    background-color: lightblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
+#page1 {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-#page2 h1{
-   color: #111; 
-    font-size: 40vw;
-    text-transform: uppercase;
-    text-shadow: 3px 3px 5px rgba(192, 22, 135, 0.5);
-      
-
+#page2 h1 {
+  color: #111;
+  font-size: 40vw;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(192, 22, 135, 0.5);
 }
 
-#page2{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(166, 185, 219);
-    display: flex;
-    /* flex-direction: column;
+#page2 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(166, 185, 219);
+  display: flex;
+  /* flex-direction: column;
     gap: 10px; */
-    padding:5vw 0;
-    /* align-items: center;
+  padding: 5vw 0;
+  /* align-items: center;
     justify-content: center; */
 }
 
-#page3{
-    height: 100%;
-    width: 100%;
-    background-color: crimson;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#page3 {
+  height: 100%;
+  width: 100%;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-#string
-{
-    height: 100%;
-    width: 100%;
-    background-color:greenyellow ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+#string {
+  height: 100%;
+  width: 100%;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-svg{
-    margin: 0 10px;
-    width: 100%;
-    background-color:rgba(106, 66, 180, 0.993);
-  
+svg {
+  margin: 0 10px;
+  width: 100%;
+  background-color: rgba(106, 66, 180, 0.993);
 }
 
-
-
-#cursor
-{
-    background-color: black;
-    width:20px;
-    height:20px;
-    border-radius: 50%;
-    position:fixed;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5px;
-    text-align: center;
-    color:white;
-
-
+#cursor {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5px;
+  text-align: center;
+  color: white;
 }
 
-
-#image
-{
-    height: 60vh;
-    width: 80vw;
-    position: relative;
-   
-   
+#image {
+  height: 70vh;
+  width: 70vw;
+  position: relative;
+  border-radius: 20px;
 }
 
-#image img
-{
-height: 100%;
-width: 100%;
-object-fit: cover;
-
+#image img {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-#image #overlay
-{
-    position: absolute;
-   background: transparent;
-    z-index:11;
-    height:100%;
-    width:100%;
+#image #overlay {
+  border-radius: 20px;
+  position: absolute;
+  background: transparent;
+  z-index: 11;
+  height: 100%;
+  width: 100%;
 }
