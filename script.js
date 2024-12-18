@@ -327,3 +327,47 @@ cross.addEventListener("click",()=>{
   
 }
 )
+
+const splittingText = ()=>{
+
+  var p1h1 = document.querySelector("#page1 h1");
+  
+
+var h1Text = p1h1.textContent;
+// console.log(h1Text)
+
+var splittedText= h1Text.split("");
+console.log(splittedText);
+var clutter = ""
+
+splittedText.forEach((elem,index)=>{
+  if( index <= splittedText.length/2)
+clutter += `<span class="a">${elem}</span>`
+  else{
+    clutter += `<span class="b">${elem}</span>`
+  }
+})
+p1h1.innerHTML =clutter
+}
+
+
+splittingText();
+
+
+gsap.from("h1 .a",
+  {
+opacity:0,
+y:100,
+duration:.5,
+stagger:.15
+  }
+)
+
+gsap.from("h1 .b",
+  {
+opacity:0,
+y:100,
+duration:.5,
+stagger:-.15
+  }
+)
