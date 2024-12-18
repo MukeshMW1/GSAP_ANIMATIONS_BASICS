@@ -85,13 +85,13 @@ tn.from("h2", {
   opacity: 0,
   delay: 0.5,
 })
-  .from("h4", {
-    y: -10,
-    duration: 0.4,
-    opacity: 0,
-    stagger: 0.3,
-    ease: "back",
-  })
+  // .from("h4", {
+  //   y: -10,
+  //   duration: 0.4,
+  //   opacity: 0,
+  //   stagger: 0.3,
+  //   ease: "back",
+  // })
 //   .from("h1", {
 //     y: 40,
 //     duration: 1,
@@ -282,3 +282,48 @@ gsap.to("#page1 #image img",
 
 
 }})
+
+
+var menu = document.querySelector(".nav i")
+var cross = document.querySelector("#sidebar i")
+
+var tk = gsap.timeline()
+
+tk.to('#sidebar',{
+
+  right:0,
+  duration:.5,
+  zIndex:12
+
+})
+
+tk.to(cursor,{
+  zIndex:13
+}
+)
+tk.from("#sidebar h4",{
+  opacity:0,
+  x:100,
+  stagger:.4
+})
+
+tk.from(cross,{
+  opacity:0
+})
+
+tk.pause();
+
+menu.addEventListener("click",()=>{
+
+  tk.play();
+  console.log("menu")
+  
+}
+)
+cross.addEventListener("click",()=>{
+
+  tk.reverse();
+  console.log("cross")
+  
+}
+)
