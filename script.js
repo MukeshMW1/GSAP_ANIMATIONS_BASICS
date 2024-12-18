@@ -224,7 +224,7 @@ body.addEventListener('mousemove',(event)=>{
 var  image =document.querySelector('#page1 #image')
 
 
-gsap.from(image,
+gsap.from("#page1 #image img",
   {
     opacity:0,
     y:200,
@@ -246,11 +246,12 @@ gsap.to(cursor,{
   scale:2,
 
 })
-gsap.to(image,
+gsap.to("#page1 #image img",
   {
     scale:.9
   }
 )
+
 
 }})
 var  image =document.querySelector('#page1 #image')
@@ -262,11 +263,12 @@ gsap.to(cursor,{
   scale:1,
 
 })
-
-gsap.to(image,
+gsap.to("#page1 #image img",
   {
     scale:1
   }
 )
+
+
 
 }})
