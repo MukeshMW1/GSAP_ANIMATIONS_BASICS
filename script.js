@@ -223,6 +223,21 @@ body.addEventListener('mousemove',(event)=>{
 
 var  image =document.querySelector('#page1 #image')
 
+
+gsap.from(image,
+  {
+    opacity:0,
+    y:200,
+    duration:2,
+    // scrollTrigger:{
+    //   trigger:image,
+    //   scrub:1,
+    //   markers:true,
+    //   start:"top 60%",
+    //   end:"top 20%"
+    // }
+  }
+)
 image.addEventListener('mouseenter',()=>{{
   // console.log("Mousee eneterd inside the image")
 cursor.innerHTML = "Show More"
